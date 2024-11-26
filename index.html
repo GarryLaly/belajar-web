@@ -4,8 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belajar Website</title>
+  <style>
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      background: rgb(243, 244, 246);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-  Hello World!
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li>Beranda</li>
+        <li>Setelan</li>
+        <li>Sync</li>
+        <li>AyatHariIni</li>
+        <li>Tentang</li>
+      </ul>
+      <div class="footer-text">Baca-Quran.id</div>
+    </div>
+    <div>
+      <h1>Baca-Quran.id</h1>
+      <div>📌 Surat yang disematkan</div>
+      <div>Kamu belum punya surah yang di pin! Mulai pin 6 surah agar mudah diakses.</div>
+      <div>🔖 Ayat terakhir dibaca</div>
+      <div>Kamu belum punya ayat yang ditandai! Yuk mulai baca dan tandai ayat.</div>
+    </div>
+  </div>
 </body>
 </html>
