@@ -24,6 +24,36 @@
     li {
       padding: 10px;
     }
+    .content {
+      padding: 10px;
+    }
+    /* Pakai Display Flex */
+    /* .submenu-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .submenu {
+      background: #ececec;
+      border-radius: 10px;
+      flex: 1;
+      flex-basis: 30%;
+      padding: 10px;
+    } */
+    .title {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .submenu-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .submenu {
+      background: #ececec;
+      border-radius: 10px;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
@@ -38,12 +68,26 @@
       </ul>
       <div class="footer-text">Baca-Quran.id</div>
     </div>
-    <div>
+    <div class="content">
       <h1>Baca-Quran.id</h1>
-      <div>📌 Surat yang disematkan</div>
-      <div>Kamu belum punya surah yang di pin! Mulai pin 6 surah agar mudah diakses.</div>
-      <div>🔖 Ayat terakhir dibaca</div>
-      <div>Kamu belum punya ayat yang ditandai! Yuk mulai baca dan tandai ayat.</div>
+      <div class="title">📌 Surat yang disematkan</div>
+      <div class="submenu">Kamu belum punya surah yang di pin! Mulai pin 6 surah agar mudah diakses.</div>
+      <div class="title">🔖 Ayat terakhir dibaca</div>
+      <div class="submenu">Kamu belum punya ayat yang ditandai! Yuk mulai baca dan tandai ayat.</div>
+      <div class="title">🌟 Fitur Baca-Quran.id</div>
+      <div class="submenu-list">
+        <div class="submenu">📚 Semua Surat</div>
+        <div class="submenu">📖 Per Ayat</div>
+        <div class="submenu">📒 Juz Amma</div>
+        <div class="submenu">💯 Asmaul Husna</div>
+        <div class="submenu">🙏 Doa Harian</div>
+        <div class="submenu">🧎 Wirid</div>
+        <div class="submenu">📿 Tasbih</div>
+        <div class="submenu">🤲 Tahlil</div>
+        <div class="submenu">🪑 Ayat Kursi</div>
+        <div class="submenu">⏰ Jadwal Sholat</div>
+        <div class="submenu">⏺️ Pencatat Ibadah</div>
+      </div>
     </div>
   </div>
 </body>
