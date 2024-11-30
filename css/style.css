@@ -105,6 +105,20 @@ ul {
   color: #666;
   font-size: 12px;
 }
+.surat-item-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.surat-item-footer-icon {
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .surat-item-info {
   align-items: center;
   display: flex;
