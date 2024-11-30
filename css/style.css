@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  background: rgb(243, 244, 246);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar ul li a {
+  border-radius: 6px;
+  padding: 5px 10px;
+  display: block;
+  transition: all 0.5s ease;
+}
+.sidebar ul li a:hover {
+  background: #ccc;
+}
+
+/* Child */
+/* .sidebar > ul > li > a {
+  text-decoration: none;
+  color: #000;
+} */
+/* Descendant */
+/* .sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+} */
+
+/* Global */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content {
+  flex: 1;
+  padding: 10px;
+}
+/* Pakai Display Flex */
+/* .submenu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.submenu {
+  background: #ececec;
+  border-radius: 10px;
+  flex: 1;
+  flex-basis: 30%;
+  padding: 10px;
+} */
+.title {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.submenu-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.submenu {
+  background: #ececec;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+.submenu:hover {
+  background: #ccc;
+}
+
+.surat-item {
+  background: #ececec;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 6px;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+.surat-item:hover {
+  background: #ccc;
+}
+.surat-item-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.surat-item-title-text {
+  font-weight: bold;
+  font-size: 14px;
+}
+.surat-item-title-desc {
+  color: #666;
+  font-size: 12px;
+}
+.surat-item-info {
+  align-items: center;
+  display: flex;
+}
+.surat-item-info-number {
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 10px;
+  font-size: 12px;
+}
+.surat-item-info-location {
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+.surat-item-info-location--makkiyah {
+  color: #ea580c;
+  background: #ffedd5;
+}
+.surat-item-info-location--madaniyah {
+  color: #16a34a;
+  background: #dcfce7;
+}
