@@ -148,3 +148,15 @@ ul {
   color: #16a34a;
   background: #dcfce7;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav-left {
+  background: #ececec;
+  padding: 5px;
+  margin: 5px;
+}
