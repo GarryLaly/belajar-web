@@ -97,6 +97,11 @@ ul {
   justify-content: space-between;
   margin-bottom: 6px;
 }
+
+.ayat-item-content {
+  justify-content: flex-end;
+}
+
 .surat-item-title-text {
   font-weight: bold;
   font-size: 14px;
@@ -119,6 +124,12 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+.ayat-footer-icon {
+  display: flex;
+  gap: 5px;
+}
+
 .surat-item-info {
   align-items: center;
   display: flex;
@@ -152,11 +163,36 @@ ul {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .nav-left {
   background: #ececec;
-  padding: 5px;
-  margin: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+}
+
+.nav-left span {
+  margin-right: 5px;
+}
+
+.nav-right {
+  background: #ececec;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px 10px 20px;
+}
+
+.nav-right span {
+  margin-left: 5px;
+}
+
+.footer-info {
+  text-align: center;
+  padding: 10px;
 }
